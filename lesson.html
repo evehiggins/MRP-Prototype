@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lesson</title>
-
-  <!-- CSS -->
+  <title>Lesson — Genetics Lab</title>
   <link rel="stylesheet" href="lesson.css">
 </head>
 
@@ -12,64 +10,93 @@
 
 <div class="layout">
 
+  <!-- ========================= -->
   <!-- SIDEBAR -->
+  <!-- ========================= -->
   <aside class="sidebar">
-    <h1 class="logo">Genetics Lab</h1>
+
+    <h1 class="logo">Decoding Genetics</h1>
 
     <nav>
       <p class="nav-title">Module 1</p>
-      <a>Lesson 1</a>
-      <a>Lesson 2</a>
-      <a>Lesson 3</a>
+      <a href="lesson.html?id=1" data-id="1">Lesson 1 — DNA & RNA</a>
+      <a href="lesson.html?id=2" data-id="2">Lesson 2 — Structure of DNA</a>
+      <a href="lesson.html?id=3" data-id="3">Lesson 3 — Base Pairing</a>
     </nav>
+
   </aside>
 
+  <!-- ========================= -->
   <!-- MAIN CONTENT -->
+  <!-- ========================= -->
   <main class="main">
 
     <!-- Header -->
     <div class="lesson-header">
-
       <div>
-        <!-- JS will insert title here -->
-        <h2></h2>
-
-        <!-- JS will insert description -->
+        <h2 class="lesson-title"></h2>
         <p class="subtitle"></p>
       </div>
-
-      <!-- Button to mark complete -->
-      <button class="complete-btn">Mark Complete</button>
-
+      <button class="complete-btn" id="completeBtn">Mark Complete</button>
     </div>
 
     <!-- VIDEO PLAYER -->
     <div class="video-container">
-
-      <!-- JS sets video source -->
-      <video controls></video>
-
+      <video controls id="lessonVideo"></video>
     </div>
 
     <!-- CONTENT GRID -->
     <div class="content-grid">
 
-      <!-- Left: lesson text -->
+      <!-- Left: Tabbed Panel -->
       <div class="lesson-content">
-        <h3>Overview</h3>
-        <p>This lesson introduces core genetic concepts.</p>
+
+        <!-- Tab Bar -->
+        <div class="tab-bar">
+          <button class="tab active" data-tab="overview">Overview</button>
+          <button class="tab" data-tab="transcript">Transcript</button>
+          <button class="tab" data-tab="readmore">Read More</button>
+        </div>
+
+        <!-- Tab: Overview -->
+        <div class="tab-panel active" id="tab-overview">
+          <h3>About this lesson</h3>
+          <p id="overview-about"></p>
+          <ul class="overview-list" id="overview-points"></ul>
+          <div class="tag-row" id="overview-tags"></div>
+        </div>
+
+        <!-- Tab: Transcript -->
+        <div class="tab-panel" id="tab-transcript">
+          <h3>Lesson Transcript</h3>
+          <div class="transcript-body" id="transcript-body"></div>
+        </div>
+
+        <!-- Tab: Read More -->
+        <div class="tab-panel" id="tab-readmore">
+          <h3>Further Reading</h3>
+          <p id="readmore-intro"></p>
+          <div class="read-list" id="read-list"></div>
+        </div>
+
       </div>
 
-      <!-- Right: sidebar info -->
+      <!-- Right: Info + Next -->
       <div class="lesson-side">
 
-        <!-- JS fills this -->
-        <div class="info-card"></div>
+        <div class="info-card">
+          <p class="info-label">Lesson Progress</p>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+          </div>
+          <p class="info-sub" id="progressText">0% complete</p>
+        </div>
 
-        <!-- Next lesson -->
         <div class="next-card">
-          <h4>Next Lesson</h4>
-          <a class="next-btn">Continue →</a>
+          <p class="info-label">Up Next</p>
+          <h4 id="nextTitle"></h4>
+          <p class="next-desc" id="nextDesc"></p>
+          <a class="next-btn" id="nextLink" href="#">Continue →</a>
         </div>
 
       </div>
@@ -79,7 +106,6 @@
   </main>
 </div>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>

@@ -2,97 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <!-- Page title (browser tab) -->
-  <title>Genetics Lab</title>
-
-  <!-- Link to your CSS file -->
+  <title>Decoding Genetics</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- MAIN LAYOUT (sidebar + content) -->
-<div class="layout">
+<!-- ===================== -->
+<!-- NAVBAR -->
+<!-- ===================== -->
+<header class="top-nav">
 
-  <!-- ===================== -->
-  <!-- SIDEBAR -->
-  <!-- ===================== -->
-  <aside class="sidebar">
+  <div class="nav-container">
 
-    <!-- Site name / logo -->
-    <h1 class="logo">Genetics Lab</h1>
+    <h1 class="logo">Decoding Genetics</h1>
 
-    <!-- Navigation -->
-    <nav>
-      <p class="nav-title">Modules</p>
-
-      <!-- Active module -->
-      <a class="active">Module 1: Foundations</a>
-
-      <!-- Future modules -->
-      <a>Module 2: Gene Expression</a>
-      <a>Module 3: Variation</a>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
 
-  </aside>
+    <input class="search" type="text" placeholder="Search..." />
 
-  <!-- ===================== -->
-  <!-- MAIN CONTENT -->
-  <!-- ===================== -->
-  <main class="main">
+  </div>
 
-    <!-- Top header -->
-    <div class="topbar">
-      <div>
-        <!-- Page title -->
-        <h2>Module 1: Foundations</h2>
+</header>
 
-        <!-- Short description -->
-        <p class="subtitle">
-          Learn the core building blocks of genetics.
-        </p>
-      </div>
-    </div>
 
-    <!-- ===================== -->
-    <!-- LESSON GRID -->
-    <!-- ===================== -->
+<!-- ===================== -->
+<!-- HERO -->
+<!-- ===================== -->
+<section class="hero">
+
+  <!-- FLOATING SHAPES -->
+  <div class="hero-bg">
+
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+  </div>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+
+    <h1>Learn Genetics Visually</h1>
+
+    <p>
+      Explore DNA, proteins, and molecular systems through cinematic animations.
+    </p>
+
+    <a href="#modules" class="cta-btn">Start Learning</a>
+
+  </div>
+
+</section>
+
+
+<!-- ===================== -->
+<!-- MODULES -->
+<!-- ===================== -->
+<section class="modules" id="modules">
+
+  <div class="modules-container">
+
+    <h2>Module 1: Foundations</h2>
+    <p class="subtitle">
+      Learn the core building blocks of genetics.
+    </p>
+
     <div class="grid">
 
       <!-- LESSON 1 -->
-      <a href="lesson.html?id=1" class="card">
-
-        <!-- Thumbnail image -->
+      <a href="lesson.html?id=1" class="card dna">
         <img src="thumbnails/dna.jpg">
 
         <div class="card-content">
-
-          <!-- Lesson label -->
           <span class="module-label">Lesson 1</span>
-
-          <!-- Title -->
           <h3>What Are DNA and RNA?</h3>
-
-          <!-- Description -->
           <p>Fundamental molecules of genetics</p>
 
-          <!-- Meta info -->
           <div class="meta">
             <span>Beginner</span>
             <span>5 min</span>
           </div>
 
-          <!-- Progress bar -->
-          <div class="progress small">
+          <div class="progress">
             <div class="progress-fill"></div>
           </div>
-
         </div>
       </a>
 
       <!-- LESSON 2 -->
-      <a href="lesson.html?id=2" class="card">
+      <a href="lesson.html?id=2" class="card protein">
         <img src="thumbnails/structure.jpg">
 
         <div class="card-content">
@@ -105,14 +108,14 @@
             <span>6 min</span>
           </div>
 
-          <div class="progress small">
+          <div class="progress">
             <div class="progress-fill"></div>
           </div>
         </div>
       </a>
 
       <!-- LESSON 3 -->
-      <a href="lesson.html?id=3" class="card">
+      <a href="lesson.html?id=3" class="card variant">
         <img src="thumbnails/basepair.jpg">
 
         <div class="card-content">
@@ -125,7 +128,7 @@
             <span>4 min</span>
           </div>
 
-          <div class="progress small">
+          <div class="progress">
             <div class="progress-fill"></div>
           </div>
         </div>
@@ -133,10 +136,10 @@
 
     </div>
 
-  </main>
-</div>
+  </div>
 
-<!-- Link JavaScript at the END so HTML loads first -->
+</section>
+
 <script src="script.js"></script>
 
 </body>
