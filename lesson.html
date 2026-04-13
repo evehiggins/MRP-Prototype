@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="lesson.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h1 class="logo">Genetics Lab</h1>
+
+    <nav>
+      <p class="nav-title">Module 1</p>
+      <a>Lesson 1</a>
+      <a>Lesson 2</a>
+      <a>Lesson 3</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- Header -->
+    <div class="lesson-header">
+
+      <div>
+        <!-- JS will insert title here -->
+        <h2></h2>
+
+        <!-- JS will insert description -->
+        <p class="subtitle"></p>
+      </div>
+
+      <!-- Button to mark complete -->
+      <button class="complete-btn">Mark Complete</button>
+
+    </div>
+
+    <!-- VIDEO PLAYER -->
+    <div class="video-container">
+
+      <!-- JS sets video source -->
+      <video controls></video>
+
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="content-grid">
+
+      <!-- Left: lesson text -->
+      <div class="lesson-content">
+        <h3>Overview</h3>
+        <p>This lesson introduces core genetic concepts.</p>
+      </div>
+
+      <!-- Right: sidebar info -->
+      <div class="lesson-side">
+
+        <!-- JS fills this -->
+        <div class="info-card"></div>
+
+        <!-- Next lesson -->
+        <div class="next-card">
+          <h4>Next Lesson</h4>
+          <a class="next-btn">Continue →</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Page title (browser tab) -->
+  <title>Genetics Lab</title>
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MAIN LAYOUT (sidebar + content) -->
+<div class="layout">
+
+  <!-- ===================== -->
+  <!-- SIDEBAR -->
+  <!-- ===================== -->
+  <aside class="sidebar">
+
+    <!-- Site name / logo -->
+    <h1 class="logo">Genetics Lab</h1>
+
+    <!-- Navigation -->
+    <nav>
+      <p class="nav-title">Modules</p>
+
+      <!-- Active module -->
+      <a class="active">Module 1: Foundations</a>
+
+      <!-- Future modules -->
+      <a>Module 2: Gene Expression</a>
+      <a>Module 3: Variation</a>
+    </nav>
+
+  </aside>
+
+  <!-- ===================== -->
+  <!-- MAIN CONTENT -->
+  <!-- ===================== -->
+  <main class="main">
+
+    <!-- Top header -->
+    <div class="topbar">
+      <div>
+        <!-- Page title -->
+        <h2>Module 1: Foundations</h2>
+
+        <!-- Short description -->
+        <p class="subtitle">
+          Learn the core building blocks of genetics.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- LESSON GRID -->
+    <!-- ===================== -->
+    <div class="grid">
+
+      <!-- LESSON 1 -->
+      <a href="lesson.html?id=1" class="card">
+
+        <!-- Thumbnail image -->
+        <img src="thumbnails/dna.jpg">
+
+        <div class="card-content">
+
+          <!-- Lesson label -->
+          <span class="module-label">Lesson 1</span>
+
+          <!-- Title -->
+          <h3>What Are DNA and RNA?</h3>
+
+          <!-- Description -->
+          <p>Fundamental molecules of genetics</p>
+
+          <!-- Meta info -->
+          <div class="meta">
+            <span>Beginner</span>
+            <span>5 min</span>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="progress small">
+            <div class="progress-fill"></div>
+          </div>
+
+        </div>
+      </a>
+
+      <!-- LESSON 2 -->
+      <a href="lesson.html?id=2" class="card">
+        <img src="thumbnails/structure.jpg">
+
+        <div class="card-content">
+          <span class="module-label">Lesson 2</span>
+          <h3>Structure of DNA</h3>
+          <p>The double helix explained</p>
+
+          <div class="meta">
+            <span>Beginner</span>
+            <span>6 min</span>
+          </div>
+
+          <div class="progress small">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- LESSON 3 -->
+      <a href="lesson.html?id=3" class="card">
+        <img src="thumbnails/basepair.jpg">
+
+        <div class="card-content">
+          <span class="module-label">Lesson 3</span>
+          <h3>Base Pairing Rules</h3>
+          <p>How DNA encodes information</p>
+
+          <div class="meta">
+            <span>Beginner</span>
+            <span>4 min</span>
+          </div>
+
+          <div class="progress small">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+  </main>
+</div>
+
+<!-- Link JavaScript at the END so HTML loads first -->
+<script src="script.js"></script>
+
+</body>
+</html>

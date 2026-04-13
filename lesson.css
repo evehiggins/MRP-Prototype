@@ -1,0 +1,162 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* ========================= */
+/* SIDEBAR */
+/* ========================= */
+
+.sidebar {
+  width: 240px;
+  background: #111827;
+  padding: 25px;
+}
+
+.logo {
+  margin-bottom: 25px;
+}
+
+.nav-title {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.sidebar a {
+  display: block;
+  margin: 10px 0;
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  color: #22d3ee;
+}
+
+/* ========================= */
+/* MAIN */
+/* ========================= */
+
+.main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle {
+  color: #9ca3af;
+}
+
+/* Button */
+.complete-btn {
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* VIDEO */
+/* ========================= */
+
+.video-container {
+  margin-top: 20px;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* ========================= */
+/* CONTENT GRID */
+/* ========================= */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* ========================= */
+/* LESSON TEXT */
+/* ========================= */
+
+.lesson-content h3 {
+  margin-top: 20px;
+}
+
+.lesson-content p {
+  color: #d1d5db;
+}
+
+.lesson-content ul {
+  margin-top: 10px;
+  color: #d1d5db;
+}
+
+/* ========================= */
+/* SIDE PANEL */
+/* ========================= */
+
+.lesson-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cards */
+.info-card,
+.next-card {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Next button */
+.next-btn {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #22d3ee;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
