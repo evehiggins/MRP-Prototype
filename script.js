@@ -223,3 +223,24 @@ completeBtn.addEventListener('click', () => {
   progressFill.style.width = done ? '100%' : '0%';
   progressText.textContent = done ? '100% complete' : '0% complete';
 });
+
+/* ========================= */
+/* VIDEO PROGRESS            */
+/* ========================= */
+
+const video = document.getElementById('lessonVideo');
+
+video.addEventListener('timeupdate', () => {
+  if (!video.duration) return;
+
+  const percent = (video.currentTime / video.duration) * 100;
+
+  progressFill.style.width = percent + '%';
+  progressText.textContent = Math.round(percent) + '% complete';
+
+  // Auto mark complete when video finishes
+  if (percent >= 100) {
+    completeBtn.classList.add('done');
+    completeBtn.textContent = '✓ Completed';
+  }
+});
