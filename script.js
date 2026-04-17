@@ -14,9 +14,14 @@ const lessons = {
     overview: {
       about: "This lesson introduces the core molecules of genetics — DNA and RNA. You'll learn how genetic information is stored, transcribed, and used by cells to build proteins.",
       points: [
-        "..."
+        "DNA is the body’s instruction manual.",
+        "Genetic information is first copied into RNA.",
+        "The message is edited — introns removed, exons kept.",
+        "mRNA carries the final instructions.",
+        "Cells use these instructions to build proteins.",
+        "Proteins power growth, development, and everyday function."
       ],
-      tags: ["Beginner", "5 min", "Module 1"]
+      tags: ["Beginner", "1.5 min", "Module 1"]
     },
 
     transcript: [
@@ -71,7 +76,7 @@ const lessons = {
       ]
     },
 
-    next: { id: 3, title: "Base Pairing Rules", desc: "How DNA encodes information" }
+    next: { id: null, title: "Module 1 Complete!", desc: "You've finished all lessons in this module." }
   },
 
   /* ========================= */
