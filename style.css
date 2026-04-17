@@ -38,9 +38,11 @@ body {
   padding: 20px;
 }
 
-.logo {
-  font-weight: 500;
+.logo a{
+  color: white;
+  text-decoration: none;
 }
+
 
 .nav-links a {
   margin: 0 15px;
