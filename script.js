@@ -9,7 +9,7 @@ const lessons = {
   1: {
     title: "What Are DNA and RNA?",
     description: "Fundamental molecules of genetics",
-    video: "../videos/lesson1.mp4",
+    video: "./videos/lesson1.mp4",
 
     overview: {
       about: "This lesson introduces the core molecules of genetics — DNA and RNA. You'll learn how genetic information is stored, transcribed, and used by cells to build proteins.",
