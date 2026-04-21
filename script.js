@@ -1,10 +1,10 @@
 /* ========================= */
 /* LESSON DATA               */
 /* ========================= */
-/* To add a new lesson, copy one of the blocks below
-   and add it to the lessons object with a new id.    */
 
 const lessons = {
+
+  /* ===== MODULE 1 ===== */
 
   1: {
     title: "What Are DNA and RNA?",
@@ -14,7 +14,7 @@ const lessons = {
     overview: {
       about: "This lesson introduces the core molecules of genetics — DNA and RNA. You'll learn how genetic information is stored, transcribed, and used by cells to build proteins.",
       points: [
-        "DNA is the body’s instruction manual.",
+        "DNA is the body's instruction manual.",
         "Genetic information is first copied into RNA.",
         "The message is edited — introns removed, exons kept.",
         "mRNA carries the final instructions.",
@@ -79,39 +79,78 @@ const lessons = {
     next: { id: null, title: "Module 1 Complete!", desc: "You've finished all lessons in this module." }
   },
 
-  /* ========================= */
+  /* ===== MODULE 2 ===== */
 
   3: {
-    title: "Base Pairing Rules",
-    description: "How DNA encodes information",
-    video: "videos/basepair.mp4",
+    title: "Module 2 Lesson 1 Title",
+    description: "Short description here",
+    video: "./videos/lesson3.mp4",
 
     overview: {
-      about: "This lesson focuses on Chargaff's rules and how the specific pairing of nitrogenous bases allows DNA to store and faithfully replicate genetic information.",
+      about: "About text for this lesson...",
       points: [
-        "Points about the lesson..."
+        "Point one...",
+        "Point two...",
+        "Point three..."
       ],
-      tags: ["Beginner", "4 min", "Module 1"]
+      tags: ["Beginner", "5 min", "Module 2"]
     },
 
     transcript: [
       { time: "0:00", text: "..." },
-      { time: "0:25", text: "..." },
-      { time: "0:52", text: "..." },
-      { time: "1:18", text: "..." },
+      { time: "0:20", text: "..." },
+      { time: "0:50", text: "..." },
+      { time: "1:15", text: "..." },
       { time: "1:45", text: "..." }
     ],
 
     readMore: {
-      intro: "Explore more...",
+      intro: "Deepen your understanding with these resources:",
       links: [
         { icon: "📄", title: "...", sub: "...", url: "#" },
-        { icon: "🧪", title: "...", sub: "...", url: "#" },
-        { icon: "📗", title: "...", sub: "...", url: "#" }
+        { icon: "🔬", title: "...", sub: "...", url: "#" },
+        { icon: "🧬", title: "...", sub: "...", url: "#" }
       ]
     },
 
-    next: { id: null, title: "Module 1 Complete!", desc: "You've finished all lessons in this module." }
+    next: { id: 4, title: "Module 2 Lesson 2 Title", desc: "..." }
+  },
+
+  /* ========================= */
+
+  4: {
+    title: "Module 2 Lesson 2 Title",
+    description: "Short description here",
+    video: "./videos/lesson4.mp4",
+
+    overview: {
+      about: "About text for this lesson...",
+      points: [
+        "Point one...",
+        "Point two...",
+        "Point three..."
+      ],
+      tags: ["Beginner", "6 min", "Module 2"]
+    },
+
+    transcript: [
+      { time: "0:00", text: "..." },
+      { time: "0:22", text: "..." },
+      { time: "0:55", text: "..." },
+      { time: "1:20", text: "..." },
+      { time: "1:50", text: "..." }
+    ],
+
+    readMore: {
+      intro: "Go further with these resources on ...",
+      links: [
+        { icon: "🔭", title: "...", sub: "...", url: "#" },
+        { icon: "📘", title: "...", sub: "...", url: "#" },
+        { icon: "🎥", title: "...", sub: "...", url: "#" }
+      ]
+    },
+
+    next: { id: null, title: "Module 2 Complete!", desc: "You've finished all lessons in this module." }
   }
 
 };
@@ -215,7 +254,6 @@ document.querySelectorAll('.tab').forEach(btn => {
 
 const video = document.getElementById('lessonVideo');
 
-// Restore saved video position
 const savedTime = localStorage.getItem(`lesson-${id}-time`);
 if (savedTime) video.currentTime = parseFloat(savedTime);
 
@@ -227,7 +265,6 @@ video.addEventListener('timeupdate', () => {
   progressFill.style.width = percent + '%';
   progressText.textContent = Math.round(percent) + '% complete';
 
-  // Save progress to localStorage
   localStorage.setItem(`lesson-${id}-time`, video.currentTime);
   localStorage.setItem(`lesson-${id}-percent`, Math.round(percent));
 
@@ -238,11 +275,11 @@ video.addEventListener('timeupdate', () => {
   }
 });
 
+
 /* ========================= */
 /* MARK COMPLETE             */
 /* ========================= */
 
-// Restore saved completion state
 if (localStorage.getItem(`lesson-${id}-complete`) === 'true') {
   completeBtn.classList.add('done');
   completeBtn.textContent = '✓ Completed';
@@ -257,6 +294,7 @@ completeBtn.addEventListener('click', () => {
   progressText.textContent = done ? '100% complete' : '0% complete';
   localStorage.setItem(`lesson-${id}-complete`, done ? 'true' : 'false');
 });
+
 
 /* ========================= */
 /* RESTORE CARD PROGRESS     */
