@@ -33,11 +33,11 @@ const lessons = {
     ],
 
     readMore: {
-      intro: "Deepen your understanding of DNA and RNA ....",
+      intro: "Deepen your understanding of DNA and RNA with these resources:",
       links: [
         { icon: "📄", title: "...", sub: "...", url: "#" },
         { icon: "🔬", title: "...", sub: "...", url: "#" },
-        { icon: "🧬", title: "NIH: What is DNA?", sub: "...", url: "#" }
+        { icon: "🧬", title: "...", sub: "...", url: "#" }
       ]
     },
 
