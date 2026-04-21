@@ -21,7 +21,7 @@ const lessons = {
         "Cells use these instructions to build proteins.",
         "Proteins power growth, development, and everyday function."
       ],
-      tags: ["Beginner", "1.5 min", "Module 1"]
+      tags: ["Foundational", "1.5 min", "Module 1"]
     },
 
     transcript: [
@@ -33,7 +33,7 @@ const lessons = {
     ],
 
     readMore: {
-      intro: "Deepen your understanding of DNA and RNA with these resources:",
+      intro: "Want to learn more? Check out these resources:",
       links: [
         { icon: "📄", title: "...", sub: "...", url: "#" },
         { icon: "🔬", title: "...", sub: "...", url: "#" },
@@ -56,7 +56,7 @@ const lessons = {
       points: [
         "Point.."
       ],
-      tags: ["Beginner", "6 min", "Module 1"]
+      tags: ["Foundational", "6 min", "Module 1"]
     },
 
     transcript: [
@@ -68,7 +68,7 @@ const lessons = {
     ],
 
     readMore: {
-      intro: "Go further with these resources on ...",
+      intro: "Want to learn more? Check out these resources:",
       links: [
         { icon: "🔭", title: "...", sub: "...", url: "#" },
         { icon: "📘", title: "...", sub: "...", url: "#" },
@@ -82,8 +82,8 @@ const lessons = {
   /* ===== MODULE 2 ===== */
 
   3: {
-    title: "Module 2 Lesson 1 Title",
-    description: "Short description here",
+    title: "What are ASOs?",
+    description: "Understanding antisense oligonucleotides",
     video: "./videos/lesson3.mp4",
 
     overview: {
@@ -105,7 +105,7 @@ const lessons = {
     ],
 
     readMore: {
-      intro: "Deepen your understanding with these resources:",
+      intro: "Want to learn more? Check out these resources:",
       links: [
         { icon: "📄", title: "...", sub: "...", url: "#" },
         { icon: "🔬", title: "...", sub: "...", url: "#" },
@@ -113,14 +113,14 @@ const lessons = {
       ]
     },
 
-    next: { id: 4, title: "Module 2 Lesson 2 Title", desc: "..." }
+    next: { id: 4, title: "What are the limitations of ASOs?", desc: "..." }
   },
 
   /* ========================= */
 
   4: {
-    title: "Module 2 Lesson 2 Title",
-    description: "Short description here",
+    title: "What are the limitations of ASOs?",
+    description: "Understanding the constraints of antisense oligonucleotides",
     video: "./videos/lesson4.mp4",
 
     overview: {
@@ -130,7 +130,7 @@ const lessons = {
         "Point two...",
         "Point three..."
       ],
-      tags: ["Beginner", "6 min", "Module 2"]
+      tags: ["Exploratory", "6 min", "Module 2"]
     },
 
     transcript: [
@@ -142,7 +142,7 @@ const lessons = {
     ],
 
     readMore: {
-      intro: "Go further with these resources on ...",
+      intro: "Want to learn more? Check out these resources:",
       links: [
         { icon: "🔭", title: "...", sub: "...", url: "#" },
         { icon: "📘", title: "...", sub: "...", url: "#" },
