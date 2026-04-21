@@ -210,25 +210,14 @@ document.querySelectorAll('.tab').forEach(btn => {
 
 
 /* ========================= */
-/* MARK COMPLETE             */
-/* ========================= */
-
-const completeBtn = document.getElementById('completeBtn');
-const progressFill = document.getElementById('progressFill');
-const progressText = document.getElementById('progressText');
-
-completeBtn.addEventListener('click', () => {
-  const done = completeBtn.classList.toggle('done');
-  completeBtn.textContent = done ? '✓ Completed' : 'Mark Complete';
-  progressFill.style.width = done ? '100%' : '0%';
-  progressText.textContent = done ? '100% complete' : '0% complete';
-});
-
-/* ========================= */
 /* VIDEO PROGRESS            */
 /* ========================= */
 
 const video = document.getElementById('lessonVideo');
+
+// Restore saved video position
+const savedTime = localStorage.getItem(`lesson-${id}-time`);
+if (savedTime) video.currentTime = parseFloat(savedTime);
 
 video.addEventListener('timeupdate', () => {
   if (!video.duration) return;
@@ -238,9 +227,49 @@ video.addEventListener('timeupdate', () => {
   progressFill.style.width = percent + '%';
   progressText.textContent = Math.round(percent) + '% complete';
 
-  // Auto mark complete when video finishes
+  // Save progress to localStorage
+  localStorage.setItem(`lesson-${id}-time`, video.currentTime);
+  localStorage.setItem(`lesson-${id}-percent`, Math.round(percent));
+
   if (percent >= 100) {
     completeBtn.classList.add('done');
     completeBtn.textContent = '✓ Completed';
+    localStorage.setItem(`lesson-${id}-complete`, 'true');
   }
+});
+
+/* ========================= */
+/* MARK COMPLETE             */
+/* ========================= */
+
+// Restore saved completion state
+if (localStorage.getItem(`lesson-${id}-complete`) === 'true') {
+  completeBtn.classList.add('done');
+  completeBtn.textContent = '✓ Completed';
+  progressFill.style.width = '100%';
+  progressText.textContent = '100% complete';
+}
+
+completeBtn.addEventListener('click', () => {
+  const done = completeBtn.classList.toggle('done');
+  completeBtn.textContent = done ? '✓ Completed' : 'Mark Complete';
+  progressFill.style.width = done ? '100%' : '0%';
+  progressText.textContent = done ? '100% complete' : '0% complete';
+  localStorage.setItem(`lesson-${id}-complete`, done ? 'true' : 'false');
+});
+
+/* ========================= */
+/* RESTORE CARD PROGRESS     */
+/* ========================= */
+
+document.querySelectorAll('.card').forEach(card => {
+  const href = card.getAttribute('href');
+  const match = href.match(/id=(\d+)/);
+  if (!match) return;
+
+  const lessonId = match[1];
+  const percent = localStorage.getItem(`lesson-${lessonId}-percent`) || 0;
+  const complete = localStorage.getItem(`lesson-${lessonId}-complete`) === 'true';
+
+  card.querySelector('.progress-fill').style.width = (complete ? 100 : percent) + '%';
 });
