@@ -1,22 +1,46 @@
 /* ========================= */
-/* GLOBAL */
+/* PALETTE                   */
+/* ========================= */
+:root {
+  --pink:       #d9729e;
+  --magenta:    #b03070;
+  --orange:     #f0922a;
+  --lavender:   #5a5fa8;
+  --navy:       #1e1e4a;
+  --text-dark:  #1e1e4a;
+  --text-mid:   #3a3a6a;
+  --text-muted: #6a6a9a;
+  --glass-bg:       rgba(255,255,255,0.45);
+  --glass-border:   rgba(255,255,255,0.65);
+  --glass-bg-dark:  rgba(255,255,255,0.25);
+}
+
+/* ========================= */
+/* GLOBAL                    */
 /* ========================= */
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Franklin Gothic Medium", Arial, sans-serif;
-
   background:
-    radial-gradient(circle at 20% 30%, rgba(168,120,180,0.25), transparent 40%),
-    radial-gradient(circle at 80% 70%, rgba(255,160,90,0.2),   transparent 40%),
-    linear-gradient(135deg, #8fa2c0, #6f78a8);
-
-  color: white;
+    radial-gradient(ellipse at 10% 20%,  rgba(200,220,248,0.9) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 10%,  rgba(140,155,210,0.7) 0%, transparent 45%),
+    radial-gradient(ellipse at 5%  80%,  rgba(180,200,235,0.8) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 85%,  rgba(110,120,195,0.6) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%,  rgba(165,180,225,0.5) 0%, transparent 70%),
+    linear-gradient(160deg, #c8d8f0 0%, #a8b8e0 40%, #8890cc 100%);
+  background-attachment: fixed;
+  color: var(--text-dark);
   min-height: 100vh;
 }
 
 /* ========================= */
-/* LAYOUT */
+/* LAYOUT                    */
 /* ========================= */
 
 .layout {
@@ -25,19 +49,17 @@ body {
 }
 
 /* ========================= */
-/* SIDEBAR */
+/* SIDEBAR                   */
 /* ========================= */
 
 .sidebar {
   width: 240px;
   flex-shrink: 0;
-
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(12px);
-
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-right: 1px solid rgba(255,255,255,0.65);
   padding: 28px 16px;
-  border-right: 1px solid rgba(255,255,255,0.1);
-
   position: sticky;
   top: 0;
   height: 100vh;
@@ -46,30 +68,34 @@ body {
 
 .logo a {
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   margin: 0 0 22px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   text-decoration: none;
-  color: white;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.25);
-  border-bottom: 1px solid rgba(255,255,255,0.12);
+  color: var(--navy);
+  border-bottom: 1px solid rgba(90,95,168,0.18);
 }
 
 .nav-title {
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
-  margin: 0 8px 10px;
+  color: var(--lavender);
+  margin: 0 8px 8px;
+  font-weight: 700;
+}
+
+nav {
+  margin-bottom: 24px;
 }
 
 nav a {
   display: block;
   padding: 9px 12px;
   border-radius: 10px;
-  color: rgba(255,255,255,0.6);
+  color: var(--text-mid);
   text-decoration: none;
   font-size: 13px;
   margin-bottom: 3px;
@@ -77,23 +103,24 @@ nav a {
 }
 
 nav a:hover {
-  background: rgba(255,255,255,0.07);
-  color: white;
+  background: rgba(90,95,168,0.1);
+  color: var(--navy);
 }
 
 nav a.active {
-  background: rgba(168,120,180,0.25);
-  color: white;
-  border: 1px solid rgba(168,120,180,0.35);
+  background: linear-gradient(90deg, rgba(217,114,158,0.18), rgba(176,48,112,0.1));
+  color: var(--navy);
+  border: 1px solid rgba(217,114,158,0.35);
+  font-weight: 700;
 }
 
 /* ========================= */
-/* MAIN */
+/* MAIN                      */
 /* ========================= */
 
 .main {
   flex: 1;
-  padding: 32px 36px 56px;
+  padding: 36px 40px 60px;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -101,7 +128,7 @@ nav a.active {
 }
 
 /* ========================= */
-/* LESSON HEADER */
+/* LESSON HEADER             */
 /* ========================= */
 
 .lesson-header {
@@ -112,38 +139,42 @@ nav a.active {
 }
 
 .lesson-title {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.5px;
   margin: 0 0 4px;
 }
 
 .subtitle {
-  color: rgba(255,255,255,0.65);
+  color: var(--text-muted);
   margin: 0;
   font-size: 14px;
 }
 
 /* ========================= */
-/* COMPLETE BUTTON */
+/* COMPLETE BUTTON           */
 /* ========================= */
 
 .complete-btn {
   flex-shrink: 0;
-  background: linear-gradient(90deg, #a878b4, #f2993a);
+  background: var(--navy);
   border: none;
   padding: 11px 22px;
-  border-radius: 12px;
+  border-radius: 999px;
   color: white;
   cursor: pointer;
   font-family: "Franklin Gothic Medium", Arial, sans-serif;
   font-size: 14px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
-  transition: 0.25s;
+  font-weight: 700;
+  box-shadow: 0 5px 20px rgba(30,30,74,0.2);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .complete-btn:hover {
+  background: var(--lavender);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 25px rgba(90,95,168,0.3);
 }
 
 .complete-btn.done {
@@ -151,7 +182,7 @@ nav a.active {
 }
 
 /* ========================= */
-/* VIDEO */
+/* VIDEO                     */
 /* ========================= */
 
 .video-container {
@@ -162,12 +193,12 @@ nav a.active {
   width: 100%;
   border-radius: 18px;
   display: block;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  box-shadow: 0 12px 40px rgba(90,95,168,0.2);
   background: #000;
 }
 
 /* ========================= */
-/* CONTENT GRID */
+/* CONTENT GRID              */
 /* ========================= */
 
 .content-grid {
@@ -178,29 +209,31 @@ nav a.active {
 }
 
 /* ========================= */
-/* TABBED PANEL */
+/* TABBED PANEL              */
 /* ========================= */
 
 .lesson-content {
-  background: rgba(255,255,255,0.07);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 4px 20px rgba(90,95,168,0.1);
 }
 
 /* Tab Bar */
 .tab-bar {
   display: flex;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  background: rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(90,95,168,0.15);
+  background: rgba(255,255,255,0.3);
 }
 
 .tab {
   flex: 1;
   background: none;
   border: none;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   font-family: "Franklin Gothic Medium", Arial, sans-serif;
   font-size: 13.5px;
   padding: 14px 0;
@@ -210,14 +243,15 @@ nav a.active {
 }
 
 .tab:hover {
-  color: rgba(255,255,255,0.85);
-  background: rgba(255,255,255,0.04);
+  color: var(--text-dark);
+  background: rgba(255,255,255,0.2);
 }
 
 .tab.active {
-  color: white;
-  border-bottom: 2px solid #a878b4;
-  background: rgba(168,120,180,0.08);
+  color: var(--navy);
+  font-weight: 700;
+  border-bottom: 2px solid var(--pink);
+  background: rgba(217,114,158,0.08);
 }
 
 /* Tab Panels */
@@ -232,12 +266,14 @@ nav a.active {
 
 .tab-panel h3 {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 800;
+  color: var(--navy);
   margin: 0 0 12px;
+  letter-spacing: -0.3px;
 }
 
 .tab-panel p {
-  color: rgba(255,255,255,0.75);
+  color: var(--text-mid);
   font-size: 14px;
   line-height: 1.7;
   margin: 0 0 12px;
@@ -250,7 +286,7 @@ nav a.active {
 }
 
 .overview-list li {
-  color: rgba(255,255,255,0.75);
+  color: var(--text-mid);
   font-size: 14px;
   line-height: 1.9;
 }
@@ -260,33 +296,37 @@ nav a.active {
   display: flex;
   gap: 8px;
   margin-top: 6px;
+  flex-wrap: wrap;
 }
 
 .tag {
   font-size: 12px;
   padding: 4px 12px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.8);
+  background: rgba(90,95,168,0.1);
+  border: 1px solid rgba(90,95,168,0.2);
+  color: var(--lavender);
+  font-weight: 600;
 }
 
 /* Transcript */
 .transcript-body p {
-  border-left: 2px solid rgba(168,120,180,0.5);
+  border-left: 2px solid rgba(217,114,158,0.5);
   padding-left: 14px;
   margin-bottom: 20px;
+  color: var(--text-mid);
 }
 
 .ts {
   display: inline-block;
   font-size: 11px;
-  background: rgba(168,120,180,0.25);
-  color: #d4a8e0;
+  background: rgba(217,114,158,0.15);
+  color: var(--magenta);
   border-radius: 6px;
   padding: 2px 7px;
   margin-bottom: 4px;
   font-family: monospace;
+  font-weight: 700;
 }
 
 /* Read more */
@@ -301,19 +341,19 @@ nav a.active {
   display: flex;
   gap: 14px;
   align-items: flex-start;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(255,255,255,0.6);
   border-radius: 14px;
   padding: 14px;
   text-decoration: none;
-  color: white;
+  color: var(--text-dark);
   transition: all 0.2s;
 }
 
 .read-card:hover {
-  background: rgba(255,255,255,0.11);
+  background: rgba(255,255,255,0.55);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(90,95,168,0.15);
 }
 
 .read-icon {
@@ -324,19 +364,19 @@ nav a.active {
 
 .read-title {
   font-size: 14px;
-  font-weight: 500;
-  color: white;
+  font-weight: 700;
+  color: var(--navy);
   margin: 0 0 4px !important;
 }
 
 .read-sub {
   font-size: 12px !important;
-  color: rgba(255,255,255,0.55) !important;
+  color: var(--text-muted) !important;
   margin: 0 !important;
 }
 
 /* ========================= */
-/* SIDE CARDS */
+/* SIDE CARDS                */
 /* ========================= */
 
 .lesson-side {
@@ -347,37 +387,42 @@ nav a.active {
 
 .info-card,
 .next-card {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
   border-radius: 20px;
-  padding: 18px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(90,95,168,0.1);
 }
 
 .info-label {
   font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: rgba(255,255,255,0.45);
-  margin: 0 0 10px;
+  letter-spacing: 0.12em;
+  color: var(--lavender);
+  font-weight: 700;
+  margin: 0 0 12px;
 }
 
 .next-card h4 {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--navy);
   margin: 0 0 4px;
 }
 
 .next-desc {
   font-size: 13px;
-  color: rgba(255,255,255,0.6);
-  margin: 0 0 14px !important;
+  color: var(--text-muted);
+  margin: 0 0 16px !important;
+  line-height: 1.5;
 }
 
 /* Progress bar */
 .progress-bar {
   height: 6px;
-  background: rgba(255,255,255,0.12);
+  background: rgba(90,95,168,0.15);
   border-radius: 999px;
   overflow: hidden;
   margin-bottom: 8px;
@@ -386,36 +431,38 @@ nav a.active {
 .progress-fill {
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #a878b4, #f2993a);
+  background: linear-gradient(90deg, var(--pink), var(--orange));
   transition: width 0.5s ease;
 }
 
 .info-sub {
   font-size: 12px;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   margin: 0 !important;
 }
 
 /* Next button */
 .next-btn {
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 12px;
-  background: linear-gradient(90deg, #a878b4, #f2993a);
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--navy);
   color: white;
   text-decoration: none;
   font-size: 13.5px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: 0.2s;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(30,30,74,0.2);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .next-btn:hover {
+  background: var(--lavender);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(90,95,168,0.3);
 }
 
 /* ========================= */
-/* RESPONSIVE */
+/* RESPONSIVE                */
 /* ========================= */
 
 @media (max-width: 900px) {
