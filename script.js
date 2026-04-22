@@ -127,7 +127,7 @@ const lessons = {
   4: {
     title: "What are the limitations of ASOs?",
     description: "Understanding the constraints of antisense oligonucleotides",
-    video: "./videos/lesson4.mp4",
+    video: "./videos/mod2lesson2.mp4",
 
     overview: {
       about: "About text for this lesson...",
@@ -136,7 +136,7 @@ const lessons = {
         "Point two...",
         "Point three..."
       ],
-      tags: ["Exploratory", "6 min", "Module 2"]
+      tags: ["Exploratory", "1.5 min", "Module 2"]
     },
 
     transcript: [
