@@ -23,7 +23,15 @@
       <a href="#">Contact</a>
     </nav>
 
-    <input class="search" type="text" placeholder="Search..." />
+    <div class="nav-actions">
+      <div class="nav-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" placeholder="Search topics…" />
+      </div>
+      <a href="#modules" class="nav-cta">Start Learning</a>
+    </div>
 
   </div>
 
@@ -35,16 +43,19 @@
 <!-- ===================== -->
 <section class="hero">
 
-  <!-- CONTENT -->
   <div class="hero-content">
 
     <h1>Learn Genetics Visually</h1>
 
     <p>
       Explore DNA, proteins, and molecular systems through cinematic animations.
+      Anyone can understand genetics — just start with what you know.
     </p>
 
-    <a href="#modules" class="cta-btn">Start Learning</a>
+    <a href="#modules" class="cta-btn">
+      Start Learning
+      <span class="cta-arrow">&#8594;</span>
+    </a>
 
   </div>
 
@@ -57,96 +68,95 @@
 <section class="modules" id="modules">
 
   <div class="modules-container">
-
-    <h2>Module 1: Foundations</h2>
-    <p class="subtitle">
-      Learn the core building blocks of genetics.
-    </p>
+    <div class="module-header">
+      <div class="module-header-text">
+        <span class="module-tag">Module 1</span>
+        <h2>Foundations</h2>
+      </div>
+      <span class="module-count">2 lessons</span>
+    </div>
 
     <div class="grid">
 
-      <!-- LESSON 1 -->
       <a href="lesson.html?id=1" class="card dna">
-        <img src="thumbnails/dna.jpg">
-
-        <div class="card-content">
+        <img src="thumbnails/dna.jpg" alt="DNA and RNA">
+        <div class="card-body">
           <span class="module-label">Lesson 1</span>
           <h3>What Are DNA and RNA?</h3>
           <p>Fundamental molecules of genetics</p>
-
+        </div>
+        <div class="card-footer">
           <div class="meta">
-            <span>Foundational</span>
+            <span class="meta-badge">Foundational</span>
             <span>1.5 min</span>
           </div>
+          <span class="card-arrow">&#8594;</span>
         </div>
       </a>
 
-      <!-- LESSON 2 -->
       <a href="lesson.html?id=2" class="card protein">
-        <img src="thumbnails/structure.jpg">
-
-        <div class="card-content">
+        <img src="thumbnails/structure.jpg" alt="Variants">
+        <div class="card-body">
           <span class="module-label">Lesson 2</span>
           <h3>How Variants Affect Genes</h3>
           <p>Understanding genetic variation</p>
-
+        </div>
+        <div class="card-footer">
           <div class="meta">
-            <span>Foundational</span>
+            <span class="meta-badge">Foundational</span>
             <span>6 min</span>
           </div>
+          <span class="card-arrow">&#8594;</span>
         </div>
       </a>
 
     </div>
-
   </div>
 
-    <!-- Module 2: Advanced Concepts -->
-
   <div class="modules-container">
-
-    <h2>Module 2: Advanced Concepts</h2>
-    <p class="subtitle">
-      Learn the core building blocks of genetics.
-    </p>
+    <div class="module-header">
+      <div class="module-header-text">
+        <span class="module-tag">Module 2</span>
+        <h2>Advanced Concepts</h2>
+      </div>
+      <span class="module-count">2 lessons</span>
+    </div>
 
     <div class="grid">
 
-      <!-- LESSON 1, coded as 3 -->
       <a href="lesson.html?id=3" class="card variant">
-        <img src="thumbnails/basepair.jpg">
-
-        <div class="card-content">
+        <img src="thumbnails/basepair.jpg" alt="ASOs">
+        <div class="card-body">
           <span class="module-label">Lesson 1</span>
           <h3>What are ASOs?</h3>
           <p>Understanding antisense oligonucleotides</p>
-
+        </div>
+        <div class="card-footer">
           <div class="meta">
-            <span>Exploratory</span>
+            <span class="meta-badge">Exploratory</span>
             <span>5 min</span>
           </div>
+          <span class="card-arrow">&#8594;</span>
         </div>
       </a>
 
-      <!-- LESSON 2 -->
       <a href="lesson.html?id=4" class="card protein">
-        <img src="thumbnails/structure.jpg">
-
-        <div class="card-content">
+        <img src="thumbnails/structure.jpg" alt="ASO limitations">
+        <div class="card-body">
           <span class="module-label">Lesson 2</span>
           <h3>What are the limitations of ASOs?</h3>
           <p>Understanding the constraints of antisense oligonucleotides</p>
-
+        </div>
+        <div class="card-footer">
           <div class="meta">
-            <span>Exploratory</span>
+            <span class="meta-badge">Exploratory</span>
             <span>6 min</span>
           </div>
+          <span class="card-arrow">&#8594;</span>
         </div>
       </a>
 
-
     </div>
-
   </div>
 
 </section>
