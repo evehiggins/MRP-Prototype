@@ -12,11 +12,11 @@ const lessons = {
     video: "./videos/lesson1.mp4",
 
     overview: {
-      about: "This lesson introduces the core molecules of genetics — DNA and RNA. You'll learn how genetic information is stored, transcribed, and used by cells to build proteins.",
+      about: "This lesson introduces the core molecules of genetics: DNA and RNA. You'll learn how genetic information is stored, transcribed, and used by cells to build proteins.",
       points: [
         "DNA is the body's instruction manual.",
         "Genetic information is first copied into RNA.",
-        "The message is edited — introns removed, exons kept.",
+        "The message is edited, introns removed, exons kept.",
         "mRNA carries the final instructions.",
         "Cells use these instructions to build proteins.",
         "Proteins power growth, development, and everyday function."
@@ -41,22 +41,26 @@ const lessons = {
       ]
     },
 
-    next: { id: 2, title: "How do Variants Affect Genes?", desc: "..." }
+    next: { id: 2, title: "How do Variants Affect Genes?", desc: "What happens when DNA instructions change? How genetic variants can affect protein function, and introduces three key ways this can impact health" }
   },
 
   /* ========================= */
 
   2: {
     title: "How do Variants Affect Genes?",
-    description: "...",
-    video: "videos/structure.mp4",
+    description: "What happens when DNA instructions change? How genetic variants can affect protein function, and introduces three key ways this can impact health",
+    video: "./videos/lesson2.mp4",
 
     overview: {
-      about: "...",
+      about: "Sometimes, small changes in DNA, called variants, can alter how the body reads and uses genetic instructions. This video explains how these changes can affect the proteins our bodies make, and how that can impact health. It introduces three common ways genes can be affected: loss of function, gain of function, and dominant negative—helping you better understand the science behind certain genetic conditions.",
       points: [
-        "Point.."
+        "Small DNA changes can affect how proteins are made",
+        "Proteins may not work properly, or may work differently",
+        "These changes can impact health",
+        "Genetic conditions often follow specific “mechanisms”",
+        "Three key types: loss of function, gain of function, dominant negative"
       ],
-      tags: ["Foundational", "6 min", "Module 1"]
+      tags: ["Foundational", "1 min", "Module 1"]
     },
 
     transcript: [
