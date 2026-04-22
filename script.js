@@ -87,17 +87,19 @@ const lessons = {
 
   3: {
     title: "What are ASOs?",
-    description: "Understanding antisense oligonucleotides",
-    video: "./videos/lesson3.mp4",
+    description: "A simple explanation of how ASO therapies work by targeting RNA to help correct or reduce harmful protein production in genetic conditions.",
+    video: "./videos/mod2lesson1.mp4",
 
     overview: {
-      about: "About text for this lesson...",
+      about: "This video introduces antisense oligonucleotides (ASOs), a type of targeted therapy that works by interacting with RNA to influence how the body reads genetic instructions. By binding to specific RNA sequences, ASOs can block faulty messages, trigger their breakdown, or alter how they are processed, such as skipping certain sections. Through these mechanisms, ASOs can reduce, modify, or restore protein production, offering a promising approach to treating some genetic conditions by slowing or stopping disease progression.",
       points: [
-        "Point one...",
-        "Point two...",
-        "Point three..."
+        "ASOs are designed to target specific genetic messages",
+        "They can stop harmful proteins from being made",
+        "They work by breaking down or modifying RNA",
+        "This approach can help manage certain genetic conditions",
+        "ASOs offer a targeted way to influence how genes are used in the body"
       ],
-      tags: ["Beginner", "5 min", "Module 2"]
+      tags: ["Exploratory", "1 min", "Module 2"]
     },
 
     transcript: [
