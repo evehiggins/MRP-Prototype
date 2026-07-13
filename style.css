@@ -784,6 +784,81 @@ body {
   line-height: 1.7;
 }
 
+/* ---- Contact ---- */
+.contact-content {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 24px;
+  padding: 40px clamp(24px, 5vw, 48px);
+  box-shadow: 0 4px 24px rgba(90,95,168,0.12);
+}
+ 
+.contact-content > p {
+  color: var(--text-mid);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+ 
+.contact-content strong {
+  color: var(--magenta);
+  font-weight: 700;
+}
+ 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+ 
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+ 
+.form-row label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.2px;
+}
+ 
+.form-row input,
+.form-row textarea {
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-dark);
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(90,95,168,0.25);
+  border-radius: 14px;
+  padding: 12px 16px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: vertical;
+}
+ 
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: var(--text-muted);
+}
+ 
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: var(--lavender);
+  box-shadow: 0 0 0 3px rgba(90,95,168,0.12);
+}
+ 
+.contact-form .cta-btn {
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 6px;
+}
+ 
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .about-hero { padding: 110px 20px 60px; }
