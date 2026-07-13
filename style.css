@@ -249,6 +249,89 @@ body {
 }
 
 /* ========================= */
+/* WHAT IS DECODING GENETICS (intro) */
+/* ========================= */
+ 
+.intro {
+  padding: 90px 40px;
+}
+ 
+.intro-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) 1fr;
+  gap: 60px;
+  align-items: center;
+}
+ 
+.intro-text .module-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+ 
+.intro-text h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+ 
+.intro-text p {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+ 
+.intro-points {
+  display: grid;
+  gap: 18px;
+}
+ 
+.intro-point {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 16px;
+  align-items: start;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 4px 20px rgba(90,95,168,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+ 
+.intro-point:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(90,95,168,0.2);
+}
+ 
+.intro-icon {
+  font-size: 26px;
+  line-height: 1;
+  grid-row: span 2;
+}
+ 
+.intro-point h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+ 
+.intro-point p {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.55;
+  grid-column: 2;
+}
+ 
+
+/* ========================= */
 /* MODULES SECTION */
 /* ========================= */
 
@@ -708,3 +791,4 @@ body {
   .objectives-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
 }
+
