@@ -807,6 +807,17 @@ body {
   font-weight: 700;
 }
  
+.contact-success {
+  background: rgba(90,95,168,0.12);
+  border: 1px solid rgba(90,95,168,0.3);
+  border-radius: 14px;
+  padding: 14px 18px;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+ 
 .contact-form {
   display: flex;
   flex-direction: column;
