@@ -210,7 +210,13 @@
         <strong>For medical questions, please contact a healthcare provider.</strong>
       </p>
 
-      <form class="contact-form">
+      <p id="contact-success" class="contact-success" hidden>
+        Thanks for reaching out! Your message has been sent.
+      </p>
+
+      <form class="contact-form" action="https://formspree.io/f/xpqvzkje" method="POST">
+        <input type="hidden" name="_next" value="about.html?sent=true">
+
         <div class="form-row">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -236,6 +242,15 @@
 </section>
 
 <script src="script.js"></script>
+<script>
+  if (new URLSearchParams(window.location.search).get('sent') === 'true') {
+    const successMsg = document.getElementById('contact-success');
+    if (successMsg) {
+      successMsg.hidden = false;
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+</script>
 
 </body>
 </html>
