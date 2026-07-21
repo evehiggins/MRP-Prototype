@@ -25,11 +25,24 @@ const lessons = {
     },
 
     transcript: [
-      { time: "0:00", text: "..." },
-      { time: "0:18", text: "..." },
-      { time: "0:45", text: "..." },
-      { time: "1:12", text: "..." },
-      { time: "1:38", text: "..." }
+      { time: "00:00", text: "Module one." },
+      { time: "00:02", text: "Chapter on" },
+      { time: "00:08", text: "Your body is made up of trillions of cells, each containing" },
+      { time: "00:12", text: "the instructions needed to build proteins that help your body grow," },
+      { time: "00:16", text: "develop, and function" },
+      { time: "00:48", text: "During a process called transcription," },
+      { time: "00:51", text: "Specialized cellular systems read and copy this information" },
+      { time: "00:55", text: "into another molecular language called RNA." },
+      { time: "01:18", text: "RNA then carries these instructionsto a cellular system" },
+      { time: "01:21", text: "that reads the information and,through a process" },
+      { time: "01:25", text: "known as translation, builds the final step" },
+      { time: "01:28", text: "called proteins." },
+      { time: "01:55", text: "Before the translation of RNA to protein, certain" },
+      { time: "01:58", text: "sections of RNA are skipped, called introns." },
+      { time: "02:04", text: "Introns contain regulatory and stabilizing components," },
+      { time: "02:07", text: "but aren't included in the final protein." },
+      { time: "02:12", text: "On the other hand," },
+      { time: "02:14", text: "exons are sections of RNA that are included in the final protein." },
     ],
 
     readMore: {
