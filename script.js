@@ -119,7 +119,7 @@ const lessons = {
       { time: "0:05", text: "This is an antisense oligonucleotide, also known as an ASO, which is a small single stranded RNA strand that binds to an RNA section in a sequence specific manner, altering the body's ability to read these instructions. " },
       { time: "0:28", text: "This means that ASOs have the potential to treat genetic conditions by slowing down or halting disease progression." },
       { time: "0:37", text: "ASOs can do this by attracting enzymes to degrade the targeted RNA. " },
-      { time: "1:45", text: "ASOs can also bind to RNA and change its regular processing, directly changing how it's read. As a result, this exon is now skipped. " }
+      { time: "1:45", text: "ASOs can also bind to RNA and change its regular processing, directly changing how it's read. As a result, this exon is now skipped. " },
       { time: "1:45", text: "These different mechanisms allow for a reduction, modification, or restoration of a specific protein. " },
     ],
 
