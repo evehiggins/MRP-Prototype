@@ -128,7 +128,7 @@ const lessons = {
       links: [
         { icon: "📄", title: "ASGCT Patient Education", sub: "Types of Cell and Gene Therapy", url: "https://patienteducation.asgct.org/understanding-cell-gene-therapy/types-of-cell-gene-therapy" },
         { icon: "🔬", title: "Families of SMA", sub: "Understanding ASOs", url: "https://www.curesma.org/wp-content/uploads/2019/07/compass_fall2013.pdf" },
-        { icon: "🧬", title: "...", sub: "...", url: "#" }
+        { icon: "🧬", title: "Antisense Oligonucleotide", sub: "NCATS Toolkit", url: "https://toolkit.ncats.nih.gov/glossary/antisense-oligonucleotide/" }
       ]
     },
 
@@ -163,9 +163,8 @@ const lessons = {
     readMore: {
       intro: "Want to learn more? Check out these resources:",
       links: [
-        { icon: "🔭", title: "...", sub: "...", url: "#" },
-        { icon: "📘", title: "...", sub: "...", url: "#" },
-        { icon: "🎥", title: "...", sub: "...", url: "#" }
+        { icon: "🔭", title: "ASGCT Patient Education", sub: "Conditions Treated", url: "https://patienteducation.asgct.org/understanding-cell-gene-therapy/conditions-treated" },
+        { icon: "📘", title: "Antisense Oligonucleotide Therapies", sub: "A Briefing for the WYNG Foundation", url: "https://www.phgfoundation.org/wp-content/uploads/2023/10/WYNG-foundation-briefing-Antisense-oligonucleotide-therapies.pdf" },
       ]
     },
 
