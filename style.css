@@ -168,7 +168,7 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-image: url("images/hero.jpg");
+  background-image: url("images/heroimage.png");
   background-size: cover;
   background-position: center right;
 }
