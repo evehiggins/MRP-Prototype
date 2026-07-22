@@ -26,14 +26,14 @@ const lessons = {
 
     transcript: [
       { time: "00:00", text: "Module one." },
-      { time: "00:02", text: "Chapter on" },
+      { time: "00:02", text: "Chapter one" },
       { time: "00:08", text: "Your body is made up of trillions of cells, each containing" },
       { time: "00:12", text: "the instructions needed to build proteins that help your body grow," },
       { time: "00:16", text: "develop, and function" },
       { time: "00:48", text: "During a process called transcription," },
       { time: "00:51", text: "Specialized cellular systems read and copy this information" },
       { time: "00:55", text: "into another molecular language called RNA." },
-      { time: "01:18", text: "RNA then carries these instructionsto a cellular system" },
+      { time: "01:18", text: "RNA then carries these instructions to a cellular system" },
       { time: "01:21", text: "that reads the information and,through a process" },
       { time: "01:25", text: "known as translation, builds the final step" },
       { time: "01:28", text: "called proteins." },
@@ -48,9 +48,9 @@ const lessons = {
     readMore: {
       intro: "Want to learn more? Check out these resources:",
       links: [
-        { icon: "📄", title: "...", sub: "...", url: "#" },
-        { icon: "🔬", title: "...", sub: "...", url: "#" },
-        { icon: "🧬", title: "...", sub: "...", url: "#" }
+        { icon: "📄", title: "MedlinePlus Genetics", sub: "DNA, genes, proteins, transcription & translation", url: "https://medlineplus.gov/genetics/understanding/basics/dna/" },
+        { icon: "🔬", title: "National Human Genome Research Institute", sub: "Talking Glossary", url: "https://www.genome.gov/genetics-glossary" },
+        { icon: "🧬", title: "Learn.Genetics", sub: "(University of Utah)", url: "https://learn.genetics.utah.edu/" }
       ]
     },
 
