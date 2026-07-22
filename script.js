@@ -87,9 +87,9 @@ const lessons = {
     readMore: {
       intro: "Want to learn more? Check out these resources:",
       links: [
-        { icon: "🔭", title: "...", sub: "...", url: "#" },
-        { icon: "📘", title: "...", sub: "...", url: "#" },
-        { icon: "🎥", title: "...", sub: "...", url: "#" }
+        { icon: "🔭", title: "MedlinePlus Genetics", sub: "Genetic Conditions", url: "https://medlineplus.gov/genetics/condition/" },
+        { icon: "📘", title: "MedlinePlus Genetics", sub: "Mutations and Disorders", url: "https://medlineplus.gov/genetics/understanding/mutationsanddisorders/" },
+        { icon: "🎥", title: "MedlinePlus Health Topics", sub: "Inherited Disorders", url: "https://medlineplus.gov/geneticdisorders.html" }
       ]
     },
 
@@ -126,8 +126,8 @@ const lessons = {
     readMore: {
       intro: "Want to learn more? Check out these resources:",
       links: [
-        { icon: "📄", title: "...", sub: "...", url: "#" },
-        { icon: "🔬", title: "...", sub: "...", url: "#" },
+        { icon: "📄", title: "ASGCT Patient Education", sub: "Types of Cell and Gene Therapy", url: "https://patienteducation.asgct.org/understanding-cell-gene-therapy/types-of-cell-gene-therapy" },
+        { icon: "🔬", title: "Families of SMA", sub: "Understanding ASOs", url: "https://www.curesma.org/wp-content/uploads/2019/07/compass_fall2013.pdf" },
         { icon: "🧬", title: "...", sub: "...", url: "#" }
       ]
     },
