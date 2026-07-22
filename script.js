@@ -143,21 +143,25 @@ const lessons = {
     video: "./videos/mod2lesson2.mp4",
 
     overview: {
-      about: "About text for this lesson...",
+      about: "This video explores the current limitations of antisense oligonucleotide (ASO) therapies and why they are not yet suitable for every genetic condition. Although ASOs have transformed treatment for some rare diseases, their success depends on understanding the underlying genetic mechanism, delivering the therapy to the right part of the body, and maintaining treatment over time. As research continues to uncover new genetic variants and improve drug delivery, ASOs are becoming an increasingly powerful tool in precision medicine.",
       points: [
-        "Point one...",
-        "Point two...",
-        "Point three..."
+        "Treatment must be repeated (limited lifespan)",
+        "Disease mechanism matters (loss/gain of function, etc.)",
+        "Delivery matters (CNS, retina, liver)",
+        "Not all diseases are currently treatable",
+        "Research is expanding what's possible",
       ],
       tags: ["Exploratory", "1.5 min", "Module 2"]
     },
 
     transcript: [
-      { time: "0:00", text: "..." },
-      { time: "0:22", text: "..." },
-      { time: "0:55", text: "..." },
-      { time: "1:20", text: "..." },
-      { time: "1:50", text: "..." }
+      { time: "0:00", text: "Module two. Chapter two. " },
+      { time: "0:05", text: "For example, ASOs are designed to be relatively stable but have a limited lifespan in the body. Repeated administrations are necessary to maintain an effective concentration over time." },
+      { time: "0:19", text: "Our limited knowledge of all possible genetic variants means that we can't yet use ASOs for every genetic disease. Researchers must know the mechanism of the disease to determine what approach is correct. " },
+      { time: "0:37", text: "That's why sometimes an already existing ASO may not work for all patients. It's also important to consider which organ or body system the genetic variant affects the most. Because right now, ASOs are best delivered to the central nervous system, retina and liver. Knowing how ASOs are delivered is important, as this will vary based on the type of disease. " },
+      { time: "1:07", text: "This is an important method of delivery to discuss with your healthcare professional." },
+      { time: "1:13", text: "ASOs can't fix everything yet, but they are already making a meaningful difference for many patients. And with every step forward, these little helpers bring us closer to new possibilities." },
+
     ],
 
     readMore: {
