@@ -77,11 +77,10 @@ const lessons = {
     },
 
     transcript: [
-      { time: "0:00", text: "..." },
-      { time: "0:22", text: "..." },
-      { time: "0:55", text: "..." },
-      { time: "1:20", text: "..." },
-      { time: "1:50", text: "..." }
+      { time: "0:00", text: "Module one. Chapter two. " },
+      { time: "0:05", text: "Sometimes variance in the underlying DNA change the genes instructions that the body follows for the process of turning DNA to RNA and RNA to proteins. " },
+      { time: "0:26", text: "This can impact the final protein that's made, which can have an impact on health. These disease causing variants can change a gene's function in three ways and are categorized as loss of function, which results in the protein losing its intended biological activity or the gene product being lost itself. Gain of function, which may cause an increase in one or more of the normal functions of the protein, or the gaining of a new function altogether, or dominant negative, which make altered proteins that interfere with the function of a normal protein. " },
+      { time: "1:11", text: "These are called mechanisms of disease. " },
     ],
 
     readMore: {
