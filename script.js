@@ -9,7 +9,7 @@ const lessons = {
   1: {
     title: "What Are DNA and RNA?",
     description: "Fundamental molecules of genetics",
-    video: "./videos/lesson1.mp4",
+    video: "./videos/moduleone_chapterone.mp4",
 
     overview: {
       about: "This lesson introduces the core molecules of genetics: DNA and RNA. You'll learn how genetic information is stored, transcribed, and used by cells to build proteins.",
@@ -62,7 +62,7 @@ const lessons = {
   2: {
     title: "How do Variants Affect Genes?",
     description: "What happens when DNA instructions change? How genetic variants can affect protein function, and introduces three key ways this can impact health",
-    video: "./videos/lesson2.mp4",
+    video: "./videos/moduleone_chaptertwo.mp4",
 
     overview: {
       about: "Sometimes, small changes in DNA, called variants, can alter how the body reads and uses genetic instructions. This video explains how these changes can affect the proteins our bodies make, and how that can impact health. It introduces three common ways genes can be affected: loss of function, gain of function, and dominant negative—helping you better understand the science behind certain genetic conditions.",
@@ -100,7 +100,7 @@ const lessons = {
   3: {
     title: "What are ASOs?",
     description: "A simple explanation of how ASO therapies work by targeting RNA to help correct or reduce harmful protein production in genetic conditions.",
-    video: "./videos/mod2lesson1.mp4",
+    video: "./videos/moduletwo_chapterone.mp4",
 
     overview: {
       about: "This video introduces antisense oligonucleotides (ASOs), a type of targeted therapy that works by interacting with RNA to influence how the body reads genetic instructions. By binding to specific RNA sequences, ASOs can block faulty messages, trigger their breakdown, or alter how they are processed, such as skipping certain sections. Through these mechanisms, ASOs can reduce, modify, or restore protein production, offering a promising approach to treating some genetic conditions by slowing or stopping disease progression.",
@@ -140,7 +140,7 @@ const lessons = {
   4: {
     title: "What are the limitations of ASOs?",
     description: "Understanding the constraints of antisense oligonucleotides",
-    video: "./videos/mod2lesson2.mp4",
+    video: "./videos/moduletwo_chaptertwo.mp4",
 
     overview: {
       about: "This video explores the current limitations of antisense oligonucleotide (ASO) therapies and why they are not yet suitable for every genetic condition. Although ASOs have transformed treatment for some rare diseases, their success depends on understanding the underlying genetic mechanism, delivering the therapy to the right part of the body, and maintaining treatment over time. As research continues to uncover new genetic variants and improve drug delivery, ASOs are becoming an increasingly powerful tool in precision medicine.",
